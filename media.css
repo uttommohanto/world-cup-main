@@ -7,35 +7,35 @@
 
 /* mobile version */
 @media screen and (max-width:576px) {
-    .master {
+    .banner {
         flex-direction: column;
         margin-top: 25px;
         border-radius: 20px;
     }
 
-    .master-text {
+    .banner-text {
         text-align: center;
     }
 
-    .master-text h1 {
+    .banner-text h1 {
         font-size: 1em;
         line-height: 30px;
     }
 
-    .master-text p {
+    .banner-text p {
         font-size: 14px;
         line-height: 15px;
     }
 
-    .master-image {
+    .banner-image {
         height: 40%;
     }
 
-    .master-image img {
+    .banner-image img {
         object-fit: contain;
     }
 
-    .master-text button {
+    .banner-text button {
         font-size: 1em;
         padding: 5px 10px;
         border-radius: 5px;
@@ -126,7 +126,7 @@
 
 /* tab version */
 @media screen and (min-width:577px) and (max-width:768px) {
-    .master-text h1 {
+    .banner-text h1 {
         font-size: 3em;
         font-weight: 600;
         line-height: 70px;
@@ -136,7 +136,7 @@
         flex-direction: column;
     }
 
-    .master-image img {
+    .banner-image img {
         object-fit: contain;
     }
 
