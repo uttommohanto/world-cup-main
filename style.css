@@ -13,6 +13,7 @@ body {
 }
 
 
+
 /* header-section */
 
 header {
@@ -98,6 +99,7 @@ header {
 .master-image img {
     width: 105%;
     height: 106%;
+    object-fit: cover;
 
 }
 
@@ -171,7 +173,7 @@ aside {
 }
 
 .card-inner-div {
-    box-shadow: 0px 0px 10px 5px rgb(151, 156, 155);
+    box-shadow: 0px 0px 3px 3px rgb(151, 156, 155);
     background-color: #c4f1fbe1;
     height: 350px;
 
@@ -335,7 +337,7 @@ hr {
     border: 0;
     height: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .footer-cls-p {

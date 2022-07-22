@@ -1,9 +1,142 @@
+/* $grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+); */
+
 /* mobile-screen */
 
 /* -----header-section------- */
-@media and (max-width: 576px) {
-    .master {
-        /* grid-template-columns: repeat(1, 1fr); */
-      
+@media screen and (max-width: 576px) {
+    header{
+        height: auto;
     }
+    .master{
+        flex-direction: column;
+    }
+    .master-text button{
+        font-size: 16px;
+    }
+    .master-text{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .master-text h1{
+        line-height: 40px;
+        font-size: 2em;
+        font-weight: 600;
+
+    }
+    .master-text p{
+        line-height: 20px;
+        font-weight: 400;
+    }
+    .master-image{
+        width: 70%;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 40px auto;
+        padding: 15px;
+    }
+    .transfer-card{
+        grid-template-columns: repeat(1,1fr);
+    }
+    aside{
+        background-color: #fff;
+        margin-bottom: 20px;
+
+    }
+    .left-nav{
+        width: 100%;
+    }
+    .left-nav-ul{
+        width: 100%;
+        align-items: center;
+    }
+    .left-nav-ul li{
+        width: auto;
+    }
+    .card-inner-div{
+        margin-bottom: 15px;
+    }
+    .footer-cls-p{
+        flex-direction: column;
+        align-items: center;
+        height: 180px;
+        margin-top: 30px;
+    }
+    .communication{
+        width: 80%;
+    }
+    
+    .communication img{
+        width: 30px;
+    }
+    
+}
+
+/* Tab-screen */
+@media screen and (min-width:577px) and ( max-width:768px){
+    .master-text h1{
+        font-size: 2em;
+        line-height: 45px;
+
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        margin: 0px auto;
+    }
+    aside{
+        width: 90%;
+        background-color: #fff;
+        height: 200px;
+
+    }
+    .left-nav{
+        width: 100%;
+    }
+    .left-nav-ul{
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px;
+    }
+    .left-nav-ul li{
+        width: 196px;
+    }
+    .transfer-card{
+        grid-template-columns: repeat(2,1fr);
+        width: 80%;
+        gap: 25px;
+    }
+    .view-button{
+        margin-top: 25px;
+    }
+    .view-button button{
+        display: block;
+       
+    }
+    .footer-cls-p{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+    }
+    .footer-sec{
+        width: 78%;
+    }
+    .footer-cls-p li{
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    .communication{
+        width: 70%;
+    }
+    
 }
