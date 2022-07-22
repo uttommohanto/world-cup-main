@@ -101,97 +101,94 @@ header {
 
 }
 
-/* left-nab-slc */
+/*  <!--  left side navbar section --> */
 main {
     width: 90%;
     margin: 100px auto;
     display: flex;
-
 }
 
 aside {
-    width: 310px;
-    height: 310px;
-    background-color: #161616;
-    border-radius: 25px;
+    width: 315px;
+    height: 315px;
+    background-color: #111111;
+    border-radius: 35px;
 
 }
 
-.left-slc {
-    width: 100%;
+.left-nav {
+    width: 310px;
     height: 100%;
 }
 
-.left-nav-slc {
-    width: 100%;
+.left-nav-ul {
+    width: 315px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     height: 100%;
-    padding: 12px;
-
-
+    padding: 20px;
 }
 
-.left-nav-slc li {
+.left-nav-ul li {
     width: 100%;
     list-style: none;
-    padding: 10px 15px;
-    border-radius: 10px;
+    padding: 12px 15px;
+    border-radius: 15px;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #ebeefb;
 
 }
 
-.left-nav-slc li:last-child {
-    background-color: #e00808;
+.left-nav-ul li:last-child {
+    background-color: #fe0707;
 
 }
 
-.left-nav-slc li:last-child a {
-    color: #ffffff;
+.left-nav-ul li:last-child a {
+    color: #e4eafd;
 }
 
-.left-nav-slc li>a {
+.left-nav-ul li>a {
     font-family: 'Poppins', sans-serif;
-    color: #161616;
+    color: #393955;
     text-decoration: none;
-    font-size: 0.80em;
-    font-weight: 450;
+    font-size: 1.2em;
+    font-weight: 500;
 
 
 }
 
-/* right-side-transfer-section */
+/*  <!-- Right side transfer card section --> */
 .transfer-card {
-    margin-left: 12px;
+    margin-left: 15px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
 }
 
-.trn-div {
-    box-shadow: 0px 0px 10px 5px gray;
-    height: 362px;
+.card-inner-div {
+    box-shadow: 0px 0px 10px 5px rgb(175, 181, 184);
+    height: 350px;
 
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
-.trn-div:hover {
+.card-inner-div:hover {
     transform: scale(105%);
 }
 
-.trn-image {
-    height: 40%;
+.card-image {
+    height: 50%;
 
 
 }
 
-.trn-image img {
+.card-image img {
     width: 100%;
     height: 100%;
     border-radius: 10px 10px 0px 0px;
@@ -200,8 +197,8 @@ aside {
 }
 
 .card-text {
-    padding: 15px;
-    height: 50%;
+    padding: 9px;
+    height: 42%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -209,9 +206,13 @@ aside {
 }
 
 .card-text button {
-    padding: 5px 15px;
+    padding: 4px 20px;
     border-radius: 5px;
     cursor: pointer;
+    background-color: rgba(200, 212, 219, 0.768);
+    transition: all 2s ease-in-out;
+    
+    
 }
 
 .view-button {
@@ -230,70 +231,22 @@ aside {
     font-weight: 400;
     display: none;
     padding: 10px 25px;
-    background-color: #DD0000;
-    color: #fbf7f7f0;
+    background-color: #f30606;
+    color: #ffffff;
     border-radius: 5px;
     transition: all 2s ease-in-out;
 }
 
 .view-button button:hover {
-    background-color: #dad7d7d3;
+    background-color: #FFFFFF;
     color: #DD0000;
 }
 
 .fa-clock,
 .fa-comment-dots {
-    color: #86b1d7;
+    color: rgba(97, 102, 106, 0.768);
     cursor: pointer;
 
-}
-
-
-
-
-
-/* right-side-time-section */
-.match-card {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-left: 10px;
-}
-
-.card-div {
-    border: 1px solid lightgrey;
-    border-radius: 10px;
-    height: 242px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.flag {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    justify-items: center;
-    align-items: center;
-    width: 100%;
-}
-
-.trn-image {
-    width: 50%;
-    height: 100%;
-    margin-bottom: 10px;
-
-}
-
-.trn-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.text-div {
-    margin-top: 10px;
-    text-align: center;
 }
 
 /* footer-section */
@@ -301,7 +254,7 @@ footer {
     width: 90%;
     margin: 0px auto;
     height: 380px;
-    background-color: #1d1c1ce7;
+    background-color: #060707bb;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -362,4 +315,45 @@ hr {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+
+
+/* <!-- Right side fixchur  --> */
+.fixchur-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-left: 15px;
+}
+
+.card {
+
+    height: 242px;
+    border-radius: 5px;
+    background-color: #d9e3e3d0;
+    border: 2px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.image {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image img {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+}
+
+.text {
+    text-align: center;
 }
